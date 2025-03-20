@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindScape - Mood-Based Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌀 MindScape</h1>
+        <p>Select your mood:</p>
+        <div class="mood-buttons">
+            <button onclick="setMood('Happy')">😊 Happy</button>
+            <button onclick="setMood('Chill')">😌 Chill</button>
+            <button onclick="setMood('Stressed')">😩 Stressed</button>
+            <button onclick="setMood('Motivated')">🔥 Motivated</button>
+        </div>
+        
+        <div class="mood-display">
+            <h2>Current Mood: <span id="mood-text">None</span></h2>
+        </div>
+
+        <div class="music-player">
+            <h3>🎵 Mood-Based Music</h3>
+            <audio id="music" controls>
+                <source id="music-source" src="" type="audio/mp3">
+            </audio>
+        </div>
+
+        <!-- AI-Powered Quotes -->
+        <div class="quote-section">
+            <h3>💡 Cosmic Insight</h3>
+            <p id="quote">Let the universe speak...</p>
+            <button onclick="generateQuote()">✨ Unlock Wisdom</button>
+            <audio id="quote-voice"></audio>
+        </div>
+
+        <!-- Cyberpunk AI Chatbot -->
+        <div class="chatbot">
+            <h3>🤖 Cyber Oracle</h3>
+            <div class="chat-display" id="chat-display"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask the oracle..." onkeypress="if(event.key==='Enter') chatbotResponse()">
+                <button onclick="chatbotResponse()">📩</button>
+            </div>
+        </div>
+
+        <!-- Holographic Mood Journal -->
+        <div class="mood-journal">
+            <h3>📖 Thought Capsule</h3>
+            <textarea id="journal-entry" placeholder="Express your thoughts..."></textarea>
+            <button onclick="saveJournal()">🔮 Save Reflection</button>
+            <p id="mood-feedback"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

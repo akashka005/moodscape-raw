@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    transition: background 1s;
+}
+
+/* Modern Card Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.mood-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Cyberpunk AI Chatbot */
+.chat-display {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.chat-bubble {
+    display: inline-block;
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.user-bubble {
+    background: #00f;
+    color: white;
+    float: right;
+}
+
+.bot-bubble {
+    background: #0ff;
+    color: black;
+    float: left;
+}
+
+/* Thought Capsule - Glowing Textarea */
+.mood-journal textarea {
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.mood-journal textarea:focus {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
